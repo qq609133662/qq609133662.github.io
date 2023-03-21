@@ -4,8 +4,13 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Hello World, Hexo">
-    <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hex">
+    <meta name="keywords" content="Hexo">
+    <meta name="description" content="POP | OOP | 内部类使用GUI图形用户界面实现一个简易计算机：
+输入两个数，点击等于号时，给出第三个数：和，并清空前两个文本框。
+
+*窗口 Frame 布局
+
+三个文本框值（加数、被加数、和）、一个标签（加号）、一个按钮（等于号）">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -17,7 +22,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>Hello World | Hexo</title>
+    <title>Hexo</title>
     <link rel="icon" type="image/png" href="/favicon.png">
     
 
@@ -334,12 +339,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/12.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/0.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">Hello World</h1>
+                    <h1 class="description center-align post-title"></h1>
                 </div>
             </div>
         </div>
@@ -375,7 +380,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>Publish Date:&nbsp;&nbsp;
-                    2023-02-19
+                    2023-03-21
                 </div>
                 
 
@@ -396,19 +401,46 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+                <h1 id="POP-OOP-内部类"><a href="#POP-OOP-内部类" class="headerlink" title="POP | OOP | 内部类"></a>POP | OOP | 内部类</h1><p><em>使用GUI图形用户界面实现一个简易计算机：</em></p>
+<p><em>输入两个数，点击等于号时，给出第三个数：和，并清空前两个文本框。</em></p>
+<ol>
+<li><p>*<em>窗口 Frame 布局</em></p>
+<ol>
+<li><em>三个文本框值（加数、被加数、和）、一个标签（加号）、一个按钮（等于号）</em></li>
+</ol>
+</li>
+<li><p><em>为按钮添加监听事件</em></p>
+</li>
+<li><p><em>关闭事件</em></p>
+</li>
+</ol>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> java.awt.*;</span><br><span class="line"><span class="keyword">import</span> java.awt.event.*; <span class="comment">//关闭事件</span></span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 测试主启动</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Demo04</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line"></span><br><span class="line">        <span class="comment">//面向过程</span></span><br><span class="line">        <span class="keyword">new</span> <span class="title class_">Calculator</span>();</span><br><span class="line"></span><br><span class="line">        <span class="comment">//面向对象 oop: --&gt; 对象().方法()</span></span><br><span class="line">        <span class="keyword">new</span> <span class="title class_">Calculator</span>().loadFrame(); </span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+<h2 id="面向过程-POP"><a href="#面向过程-POP" class="headerlink" title="面向过程 (POP)"></a>面向过程 (POP)</h2><p>Procedure Oriented Programming</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//计算器类</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">Calculator</span> <span class="keyword">extends</span> <span class="title class_">Frame</span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="title function_">Calculator</span><span class="params">()</span> &#123; </span><br><span class="line"></span><br><span class="line">        <span class="type">TextField</span> <span class="variable">num1</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">TextField</span>(<span class="number">10</span>);</span><br><span class="line">        <span class="type">TextField</span> <span class="variable">num2</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">TextField</span>(<span class="number">10</span>);</span><br><span class="line">        <span class="type">TextField</span> <span class="variable">num3</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">TextField</span>(<span class="number">20</span>); <span class="comment">// 参数为字符数</span></span><br><span class="line"></span><br><span class="line">        <span class="type">Button</span> <span class="variable">button</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Button</span>(<span class="string">&quot;=&quot;</span>);       <span class="comment">// this Calculator本身</span></span><br><span class="line">        button.addActionListener(<span class="keyword">new</span> <span class="title class_">CalculaListener</span>(<span class="built_in">this</span>)); <span class="comment">// 为按钮添加监听事件</span></span><br><span class="line"></span><br><span class="line">        <span class="type">Label</span> <span class="variable">label</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Label</span>(<span class="string">&quot;+&quot;</span>);</span><br><span class="line"></span><br><span class="line">        setLayout(<span class="keyword">new</span> <span class="title class_">FlowLayout</span>());</span><br><span class="line">        </span><br><span class="line">        add(num1);</span><br><span class="line">        add(label);</span><br><span class="line">        add(num2);</span><br><span class="line">        add(button);</span><br><span class="line">        add(num3);</span><br><span class="line"></span><br><span class="line">        pack(); <span class="comment">//默认初始值大小</span></span><br><span class="line"></span><br><span class="line">        setVisible(<span class="literal">true</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//监听类</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">CalculaListener</span> <span class="keyword">implements</span> <span class="title class_">ActionListener</span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="comment">//获取三个变量</span></span><br><span class="line">    <span class="keyword">private</span> TextField num1, num2, num3;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="title function_">CalculaListener</span><span class="params">(TextField num1, TextField num2, TextField num3)</span> &#123;</span><br><span class="line">        <span class="built_in">this</span>.num1 = num1; <span class="comment">//将三个文本框参数传进来</span></span><br><span class="line">        <span class="built_in">this</span>.num2 = num2;</span><br><span class="line">        <span class="built_in">this</span>.num3 = num3;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Override</span> <span class="comment">//重写处理事件的方法</span></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">actionPerformed</span><span class="params">(ActionEvent e)</span> &#123;</span><br><span class="line">        </span><br><span class="line">        <span class="comment">// 1.获取加数和被加数</span></span><br><span class="line">        <span class="type">int</span> <span class="variable">n1</span> <span class="operator">=</span> Integer.parseInt(num1.getText()); <span class="comment">//用这个包下的方式转换类型</span></span><br><span class="line">        <span class="type">int</span> <span class="variable">n2</span> <span class="operator">=</span> Integer.parseInt(num2.getText());</span><br><span class="line"></span><br><span class="line">        <span class="comment">// 2.将两个值加法运算后输出到num3的文本框</span></span><br><span class="line">        num3.setText(<span class="string">&quot;&quot;</span> + (n1+n2)); <span class="comment">//使用 .setText() 而不是 .add() // 加 &quot;&quot; 的目的是让整个字符类型变为字符串</span></span><br><span class="line"></span><br><span class="line">        <span class="comment">// 3.清除num1和num2的文本框</span></span><br><span class="line">        num1.setText(<span class="string">&quot;&quot;</span>);</span><br><span class="line">        num2.setText(<span class="string">&quot;&quot;</span>);</span><br><span class="line">        </span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+
+
+
+
+<h2 id="面向对象-OOP"><a href="#面向对象-OOP" class="headerlink" title="面向对象 (OOP)"></a>面向对象 (OOP)</h2><p>Object Oriented Programming </p>
+<blockquote>
+<ol>
+<li><p>封装</p>
+</li>
+<li><p>继承</p>
+</li>
+<li><p>多态</p>
+</li>
+</ol>
+</blockquote>
+<p><strong>OOP: 组合大于继承！尽量不要使用多态、继承!</strong></p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//计算器类</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">Calculator</span> <span class="keyword">extends</span> <span class="title class_">Frame</span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="comment">//属性</span></span><br><span class="line">    TextField num1, num2, num3;</span><br><span class="line">    Label label;</span><br><span class="line">    Button button;</span><br><span class="line"></span><br><span class="line">    <span class="comment">//方法</span></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">loadFrame</span><span class="params">()</span>&#123;</span><br><span class="line"></span><br><span class="line">        <span class="comment">//组件</span></span><br><span class="line">        num1 = <span class="keyword">new</span> <span class="title class_">TextField</span>(<span class="number">10</span>);</span><br><span class="line">        num2 = <span class="keyword">new</span> <span class="title class_">TextField</span>(<span class="number">10</span>);</span><br><span class="line">        num3 = <span class="keyword">new</span> <span class="title class_">TextField</span>(<span class="number">20</span>); </span><br><span class="line">        label = <span class="keyword">new</span> <span class="title class_">Label</span>(<span class="string">&quot;+&quot;</span>);</span><br><span class="line">        button = <span class="keyword">new</span> <span class="title class_">Button</span>(<span class="string">&quot;=&quot;</span>);  </span><br><span class="line">        </span><br><span class="line">                                                    <span class="comment">//Calculator类本身</span></span><br><span class="line">        button.addActionListener(<span class="keyword">new</span> <span class="title class_">CalculaListener</span>(<span class="built_in">this</span>)); <span class="comment">//为按钮添加监听事件</span></span><br><span class="line"></span><br><span class="line">        <span class="comment">//布局</span></span><br><span class="line">        setLayout(<span class="keyword">new</span> <span class="title class_">FlowLayout</span>());</span><br><span class="line">        add(num1);</span><br><span class="line">        add(label);</span><br><span class="line">        add(num2);</span><br><span class="line">        add(button);</span><br><span class="line">        add(num3);</span><br><span class="line"></span><br><span class="line">        pack();</span><br><span class="line">        setVisible(<span class="literal">true</span>);</span><br><span class="line"></span><br><span class="line">        <span class="comment">//关闭事件</span></span><br><span class="line">        addWindowListener(<span class="keyword">new</span> <span class="title class_">WindowAdapter</span>()&#123;</span><br><span class="line"></span><br><span class="line">            <span class="meta">@Override</span></span><br><span class="line">            <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">windowClosing</span><span class="params">(WindowEvent e)</span> &#123;</span><br><span class="line">                <span class="comment">// TODO Auto-generated method stub</span></span><br><span class="line">                System.exit(<span class="number">0</span>);;</span><br><span class="line">            &#125; </span><br><span class="line">        &#125;);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//监听类</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">CalculaListener</span> <span class="keyword">implements</span> <span class="title class_">ActionListener</span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="comment">//获取Calculator类对象</span></span><br><span class="line">    <span class="type">Calculator</span> <span class="variable">calculator</span> <span class="operator">=</span> <span class="literal">null</span>; <span class="comment">//组合</span></span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="title function_">CalculaListener</span><span class="params">(Calculator calculator)</span> &#123;</span><br><span class="line">        <span class="built_in">this</span>.calculator = calculator; <span class="comment">//将三个文本框参数传进来</span></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Override</span>  <span class="comment">//重写处理事件的方法</span></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">actionPerformed</span><span class="params">(ActionEvent e)</span> &#123;</span><br><span class="line">        </span><br><span class="line">        <span class="comment">// 1.获取加数和被加数</span></span><br><span class="line">        <span class="type">int</span> <span class="variable">n1</span> <span class="operator">=</span> Integer.parseInt(calculator.num1.getText()); <span class="comment">//用这个包下的方式转换类型</span></span><br><span class="line">        <span class="type">int</span> <span class="variable">n2</span> <span class="operator">=</span> Integer.parseInt(calculator.num2.getText());</span><br><span class="line"></span><br><span class="line">        <span class="comment">// 2.将两个值加法运算后输出到num3的文本框</span></span><br><span class="line">        calculator.num3.setText(<span class="string">&quot;&quot;</span> + (n1+n2)); <span class="comment">//使用 .setText() 而不是 .add() </span></span><br><span class="line">        <span class="comment">// 加 &quot;&quot; 的目的是让整个字符类型变为字符串</span></span><br><span class="line"></span><br><span class="line">        <span class="comment">// 3.清除num1和num2的文本框</span></span><br><span class="line">        calculator.num1.setText(<span class="string">&quot;&quot;</span>);</span><br><span class="line">        calculator.num2.setText(<span class="string">&quot;&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="内部类"><a href="#内部类" class="headerlink" title="内部类"></a>内部类</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//计算器类</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">Calculator</span> <span class="keyword">extends</span> <span class="title class_">Frame</span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="comment">//属性</span></span><br><span class="line">    TextField num1, num2, num3;</span><br><span class="line">    Label label;</span><br><span class="line">    Button button;</span><br><span class="line"></span><br><span class="line">    <span class="comment">//方法</span></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">loadFrame</span><span class="params">()</span>&#123;</span><br><span class="line"></span><br><span class="line">        <span class="comment">//组件</span></span><br><span class="line">        num1 = <span class="keyword">new</span> <span class="title class_">TextField</span>(<span class="number">10</span>);</span><br><span class="line">        num2 = <span class="keyword">new</span> <span class="title class_">TextField</span>(<span class="number">10</span>);</span><br><span class="line">        num3 = <span class="keyword">new</span> <span class="title class_">TextField</span>(<span class="number">20</span>); </span><br><span class="line">        label = <span class="keyword">new</span> <span class="title class_">Label</span>(<span class="string">&quot;+&quot;</span>);</span><br><span class="line">        button = <span class="keyword">new</span> <span class="title class_">Button</span>(<span class="string">&quot;=&quot;</span>);  </span><br><span class="line">        </span><br><span class="line">                                                    <span class="comment">//Calculator类本身</span></span><br><span class="line">        button.addActionListener(<span class="keyword">new</span> <span class="title class_">CalculaListener</span>()); <span class="comment">//为按钮添加监听事件</span></span><br><span class="line"></span><br><span class="line">        <span class="comment">//布局</span></span><br><span class="line">        setLayout(<span class="keyword">new</span> <span class="title class_">FlowLayout</span>());</span><br><span class="line">        add(num1);</span><br><span class="line">        add(label);</span><br><span class="line">        add(num2);</span><br><span class="line">        add(button);</span><br><span class="line">        add(num3);</span><br><span class="line"></span><br><span class="line">        pack();</span><br><span class="line">        setVisible(<span class="literal">true</span>);</span><br><span class="line"></span><br><span class="line">        <span class="comment">//关闭事件</span></span><br><span class="line">        addWindowListener(<span class="keyword">new</span> <span class="title class_">WindowAdapter</span>()&#123;</span><br><span class="line">            <span class="meta">@Override</span></span><br><span class="line">            <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">windowClosing</span><span class="params">(WindowEvent e)</span> &#123;</span><br><span class="line">                <span class="comment">// TODO Auto-generated method stub</span></span><br><span class="line">                System.exit(<span class="number">0</span>);;</span><br><span class="line">            &#125;</span><br><span class="line">            </span><br><span class="line">        &#125;);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">//内部类 可自如使用外部类的属性和方法</span></span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">class</span> <span class="title class_">CalculaListener</span> <span class="keyword">implements</span> <span class="title class_">ActionListener</span>&#123;</span><br><span class="line"></span><br><span class="line">        <span class="meta">@Override</span></span><br><span class="line">        <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">actionPerformed</span><span class="params">(ActionEvent e)</span> &#123;</span><br><span class="line">            </span><br><span class="line">            <span class="comment">// 1.获取加数和被加数</span></span><br><span class="line">            <span class="type">int</span> <span class="variable">n1</span> <span class="operator">=</span> Integer.parseInt(num1.getText()); <span class="comment">//用这个包下的方式转换类型</span></span><br><span class="line">            <span class="type">int</span> <span class="variable">n2</span> <span class="operator">=</span> Integer.parseInt(num2.getText());</span><br><span class="line">    </span><br><span class="line">            <span class="comment">// 2.将两个值加法运算后输出到num3的文本框</span></span><br><span class="line">            num3.setText(<span class="string">&quot;&quot;</span> + (n1+n2)); <span class="comment">//使用 .setText() 而不是 .add() </span></span><br><span class="line">            <span class="comment">// 加 &quot;&quot; 的目的是让整个字符类型变为字符串</span></span><br><span class="line">    </span><br><span class="line">            <span class="comment">// 3.清除num1和num2的文本框</span></span><br><span class="line">            num1.setText(<span class="string">&quot;&quot;</span>);</span><br><span class="line">            num2.setText(<span class="string">&quot;&quot;</span>);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
 
                 
             </div>
@@ -435,7 +467,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://example.com/2023/02/19/hello-world/">http://example.com/2023/02/19/hello-world/</a>
+                    <a href="http://example.com/2023/03/21/OPP%20and%20OOP/">http://example.com/2023/03/21/OPP%20and%20OOP/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -549,11 +581,12 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;Previous</div>
+                <i class="far fa-dot-circle"></i>&nbsp;Current
+            </div>
             <div class="card">
-                <a href="/2023/02/25/Day0/">
+                <a href="/2023/03/21/OPP%20and%20OOP/">
                     <div class="card-image">
                         
                         
@@ -569,9 +602,9 @@
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2023-02-25
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2023-03-21
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-user fa-fw"></i>
@@ -580,6 +613,7 @@
                         </span>
                     </div>
                 </div>
+
                 
             </div>
         </div>
@@ -590,13 +624,13 @@
                 Current&nbsp;<i class="far fa-dot-circle"></i>
             </div>
             <div class="card">
-                <a href="/2023/02/19/hello-world/">
+                <a href="/2023/03/21/OPP%20and%20OOP/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="Hello World">
+                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="">
                         
-                        <span class="card-title">Hello World</span>
+                        <span class="card-title"></span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -607,7 +641,7 @@
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2023-02-19
+                                <i class="far fa-clock fa-fw icon-date"></i>2023-03-21
                             </span>
                         <span class="publish-author">
                             
